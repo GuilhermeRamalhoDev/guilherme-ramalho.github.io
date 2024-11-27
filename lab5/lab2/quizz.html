@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizz sobre Veneza</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        fieldset {
+            border: 2px solid #0077cc;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        legend {
+            font-weight: bold;
+        }
+        label {
+            display: block;
+            margin: 5px 0;
+        }
+        input[type="submit"], input[type="reset"] {
+            margin-top: 10px;
+            padding: 10px 15px;
+            background-color: #0077cc;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover, input[type="reset"]:hover {
+            background-color: #005fa3;
+        }
+    </style>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <h2>Quizz</h2>
+    <form method="get" action="https://postman-echo.com/get">
+        <!-- Área de Dados Pessoais -->
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required size="30" maxlength="50" autofocus>
+
+            <label for="apelido">Apelido:</label>
+            <input type="text" id="apelido" name="apelido" placeholder="Digite seu apelido" required size="30" maxlength="50">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Digite seu email" autocomplete="email" required>
+        </fieldset>
+
+        <!-- Quizz sobre Veneza -->
+        <fieldset>
+            <legend>Sobre Veneza</legend>
+
+            <!-- Pergunta com opções (radio) -->
+            <label>Veneza é conhecida como a:</label>
+            <input type="radio" id="cidade_agua" name="apelido_cidade" value="cidade_agua" required>
+            <label for="cidade_agua">Cidade da Água</label>
+
+            <input type="radio" id="cidade_luz" name="apelido_cidade" value="cidade_luz">
+            <label for="cidade_luz">Cidade da Luz</label>
+
+            <input type="radio" id="cidade_amor" name="apelido_cidade" value="cidade_amor">
+            <label for="cidade_amor">Cidade do Amor</label>
+
+            <!-- Pergunta com checkbox -->
+            <label>Quais atrações você gostaria de visitar em Veneza? (Escolha pelo menos uma)</label>
+            <input type="checkbox" id="gondola" name="atracoes[]" value="andar_gondola">
+            <label for="gondola">Andar de Gôndola</label>
+
+            <input type="checkbox" id="ponte_rialto" name="atracoes[]" value="ponte_rialto">
+            <label for="ponte_rialto">Ponte Rialto</label>
+
+            <input type="checkbox" id="praca_sao_marcos" name="atracoes[]" value="praca_sao_marcos">
+            <label for="praca_sao_marcos">Praça São Marcos</label>
+
+            <!-- Pergunta com cor -->
+            <label for="cor_ponte">Escolha a cor para pintar a Ponte Rialto:</label>
+            <input type="color" id="cor_ponte" name="cor_ponte" value="#ff0000">
+
+            <!-- Pergunta com número -->
+            <label for="numero_gondolas">Quantas gôndolas você gostaria de reservar?</label>
+            <input type="number" id="numero_gondolas" name="numero_gondolas" placeholder="0" min="1" max="10" step="1" value="1">
+
+            <!-- Pergunta com intervalo -->
+            <label for="preco">Selecione o preço ideal para um passeio de gôndola (€):</label>
+            <input type="range" id="preco" name="preco" min="50" max="500" step="50" value="150">
+
+            <!-- Pergunta com data e hora -->
+            <label for="data_visita">Escolha a data da sua visita:</label>
+            <input type="date" id="data_visita" name="data_visita" required>
+
+            <label for="hora_visita">Escolha o horário:</label>
+            <input type="time" id="hora_visita" name="hora_visita">
+
+            <!-- Pergunta com datalist -->
+            <label for="comida_favorita">Qual sua comida italiana favorita?</label>
+            <input type="text" id="comida_favorita" name="comida_favorita" placeholder="Ex: Pizza" list="comidas">
+            <datalist id="comidas">
+                <option value="Pizza">
+                <option value="Pasta">
+                <option value="Risotto">
+                <option value="Gelato">
+                <option value="Tiramisu">
+            </datalist>
+
+            <!-- Pergunta com imagem -->
+            <label for="gondola_imagem">Clique na imagem para escolher o passeio:</label>
+            <input type="image" id="gondola_imagem" name="gondola_imagem" src="https://upload.wikimedia.org/wikipedia/commons/3/36/Venice_-_Gondola.jpg" alt="Gôndola" width="200">
+
+            <!-- Botões -->
+            <input type="reset" value="Resetar Formulário">
+            <input type="submit" value="Enviar Respostas">
+        </fieldset>
+    </form>
+</body>
+</html>
