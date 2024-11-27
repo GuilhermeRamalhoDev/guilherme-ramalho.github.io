@@ -32,31 +32,40 @@ nav {
 }
 
 nav a {
-    padding: 20px;
     text-decoration: none; /* Remove o sublinhado */
-    color: #fff; /* Cor da fonte */
-    transition: background-color 0.3s;
+    color: #333; /* Cor padrão dos links */
+    padding: 10px; /* Adiciona um pouco de espaçamento */
+    display: inline-block; /* Para melhor controle de layout */
 }
 
-nav a.home-link {
-    background-color: #ff5722; /* Cor de fundo diferente para o último link */
-}
-
-nav a:hover {
-    background-color: #575757; /* Cor ao passar o mouse */
-}
-
-/* Estilização dos links */
 nav a:link {
-    color: #fff; /* Cor do link não visitado */
+    color: #333; /* Cor dos links não visitados */
 }
 
 nav a:visited {
-    color: #ccc; /* Cor do link visitado */
+    color: #555; /* Cor dos links visitados */
+}
+
+nav a:hover {
+    color: #007bff; /* Cor ao passar o mouse */
+    background-color: rgba(0, 123, 255, 0.1); /* Fundo leve ao passar o mouse */
+    border-radius: 5px; /* Bordas arredondadas ao passar o mouse */
 }
 
 nav a:active {
-    color: #ffeb3b; /* Cor do link ativo */
+    color: #0056b3; /* Cor quando o link é clicado */
+}
+
+/* Efeitos com before e after */
+nav a::before {
+    content: ''; /* Necessário para o pseudo-elemento */
+    display: inline-block; /* Para que o ícone fique ao lado do texto */
+    margin-right: 8px; /* Espaço entre o ícone e o texto */
+    transition: transform 0.3s; /* Transição suave para o efeito */
+}
+
+nav a:hover::before {
+    transform: scale(1.2); /* Aumenta o ícone ao passar o mouse */
 }
 
 /* Main Section */
