@@ -4,20 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galeria Simples</title>
+    <style>
+        iframe {
+            display: block;
+            margin-top: 20px;
+            border: 1px solid #ccc;
+        }
+        img {
+            width: 150px;
+            height: auto;
+            margin: 5px;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
 
 <h1>Galeria de Imagens</h1>
 
-<p>multimedia Veneza</p>
+<p>Multimedia Veneza</p>
 
-<img src="lab2/images/multimedia1.jpeg" alt="Imagem 1">
+<!-- Links das imagens pequenas -->
+<a href="lab3\lab2/images/multimedia1.jpeg" target="fotoGrande">
+    <img src="lab3\lab2/images/multimedia1.jpeg" alt="Imagem 1">
+</a>
 
-<img src="lab2/images/multimedia2.jpeg" alt="Imagem 2">
+<a href="lab3\lab2/images/multimedia2.jpeg" target="fotoGrande">
+    <img src="lab3\lab2/images/multimedia2.jpeg" alt="Imagem 2">
+</a>
 
-<img src="lab2/images/multimedia3.jpeg" alt="Imagem 3">
+<a href="lab3\lab2/images/multimedia3.jpeg" target="fotoGrande">
+    <img src="lab3\lab2/images/multimedia3.jpeg" alt="Imagem 3">
+</a>
 
-<img src="lab2/images/multimedia4.jpeg" alt="Imagem 4">
+<a href="lab3\lab2/images/multimedia4.jpeg" target="fotoGrande">
+    <img src="lab3\lab2/images/multimedia4.jpeg" alt="Imagem 4">
+</a>
+
+<!-- Elemento iframe para exibir a foto grande -->
+<iframe name="fotoGrande" width="800" height="600" title="Imagem Grande"></iframe>
 
 </body>
 </html>
