@@ -1,0 +1,167 @@
+/* Reset global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Medidas baseadas na borda */
+}
+
+/* Estilo para o body */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    background-color: #4caf50; /* Cor de fundo do header */
+    color: #fff;
+    padding: 10px 20px;
+    z-index: 1000; /* Para garantir que o header fique acima de outros elementos */
+}
+
+/* Navegação */
+nav {
+    display: flex;
+}
+
+nav a {
+    text-decoration: none; /* Remove o sublinhado */
+    color: #333; /* Cor padrão dos links */
+    padding: 10px; /* Adiciona um pouco de espaçamento */
+    display: inline-block; /* Para melhor controle de layout */
+}
+
+nav a:link {
+    color: #333; /* Cor dos links não visitados */
+}
+
+nav a:visited {
+    color: #555; /* Cor dos links visitados */
+}
+
+nav a:hover {
+    color: #007bff; /* Cor ao passar o mouse */
+    background-color: rgba(0, 123, 255, 0.1); /* Fundo leve ao passar o mouse */
+    border-radius: 5px; /* Bordas arredondadas ao passar o mouse */
+}
+
+nav a:active {
+    color: #0056b3; /* Cor quando o link é clicado */
+}
+
+/* Efeitos com before e after */
+nav a::before {
+    content: ''; /* Necessário para o pseudo-elemento */
+    display: inline-block; /* Para que o ícone fique ao lado do texto */
+    margin-right: 8px; /* Espaço entre o ícone e o texto */
+    transition: transform 0.3s; /* Transição suave para o efeito */
+}
+
+nav a:hover::before {
+    transform: scale(1.2); /* Aumenta o ícone ao passar o mouse */
+}
+
+/* Main Section */
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+main h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+main ol li {
+    margin: 10px 0;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+}
+
+/* Estilo para o artigo do poema */
+article {
+    width: 100vw; /* Largura total da viewport */
+    height: 50vh; /* Metade da altura da viewport */
+    display: flex; /* Usar flexbox para centralizar */
+    justify-content: center; /* Centralizar horizontalmente */
+    align-items: center; /* Centralizar verticalmente */
+    background-color: #e0f7fa; /* Cor de fundo do artigo */
+    padding: 20px; /* Espaçamento interno */
+    margin: 20px 0; /* Margem acima e abaixo */
+}
+
+article div {
+    text-align: center; /* Centraliza o texto dentro do div */
+}
+
+article p {
+    font-size: 1.5em; /* Tamanho da fonte do poema */
+    margin: 10px 0; /* Margem acima e abaixo do poema */
+}
+
+.autor {
+    font-weight: bold; /* Nome do autor em negrito */
+    font-style: italic; /* Nome do autor em itálico */
+    margin-top: 20px; /* Margem acima do nome do autor */
+}
+
+/* Estilo para o artigo de paisagem */
+#paisagem {
+    margin: 20px 0; /* Margem acima e abaixo do artigo */
+}
+
+.imagem-container {
+    position: relative; /* Permite o posicionamento absoluto do texto */
+}
+
+.imagem-container img {
+    width: 100vw; /* A imagem ocupa toda a largura da viewport */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+.fotografo {
+    position: absolute; /* Permite o posicionamento no canto inferior direito */
+    bottom: 10px; /* Distância do fundo */
+    right: 10px; /* Distância da direita */
+    color: #ffffff; /* Cor do texto (branco) */
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente para melhor contraste */
+    padding: 5px 10px; /* Espaçamento interno */
+    border-radius: 5px; /* Bordas arredondadas */
+}
+
+.fotografo a {
+    color: #ffffff; /* Cor do link (branco) */
+    text-decoration: none; /* Remove o sublinhado */
+}
+
+.fotografo a:hover {
+    text-decoration: underline; /* Sublinha o link ao passar o mouse */
+}
+
+/* Estilo para o body */
+body {
+    font-family: 'Roboto', sans-serif; /* Altera a fonte para Roboto */
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 20px;
+}
