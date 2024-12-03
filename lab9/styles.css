@@ -1,0 +1,132 @@
+body {
+    margin: 0;
+    background-color: #F0F0F0; /* Cinza claro */
+}
+
+.header {
+    background-color: #7B68EE; /* Roxo médio */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.title-header {
+    color: #FFFFFF; /* Branco */
+    margin-right: auto;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+}
+
+.element-header {
+    color: #FFFFFF; /* Branco */
+    margin: 0;
+    padding: 0;
+    margin-right: 20px;
+}
+
+.header p {
+    margin-left: 20px;
+}
+
+#title-page, #title-cesto, #price-cesto {
+    color: #4B0082; /* Roxo escuro */
+    font-weight: bold;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 70px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.grid-item, .cesto-item {
+    background-color: #FFFFFF; /* Branco */
+    border: 1px solid #DDDDDD; /* Cinza claro */
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    max-width: 250px;
+    margin: 0 auto;
+}
+
+.grid-item img, .cesto-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.cesto {
+    padding: 20px;
+    background-color: #E6E6FA; /* Lavanda */
+    border-top: 1px solid #DDDDDD; /* Cinza claro */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.title-product {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #4B0082; /* Roxo escuro */
+}
+
+.price-product {
+    font-size: 1.1em;
+    color: #2F4F4F; /* Cinza escuro */
+    margin-bottom: 10px;
+}
+
+.description-product {
+    font-size: 0.9em;
+    color: #696969; /* Cinza médio */
+    margin-bottom: 20px;
+}
+
+.button-product {
+    background-color: #FF69B4; /* Rosa vibrante */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: auto;
+}
+
+.button-product:hover {
+    background-color: #FF1493; /* Rosa escuro */
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #7B68EE; /* Roxo médio */
+    color: white;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #FF69B4; /* Rosa vibrante */
+    border-color: #FFFFFF;
+    border: 2px solid white;
+    border-radius: 30px;
+    padding: 5px;
+}
